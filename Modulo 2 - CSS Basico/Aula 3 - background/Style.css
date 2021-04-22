@@ -1,0 +1,21 @@
+body {
+    background-image: url(back.jpg);
+    /*background-position: 100% 10%;
+    para dúvidas e consultas sobre o que usar em html, css e java, site w3schools.com*/
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: 200px;
+}
+
+h3 {
+    color:#1db81dfd
+}
+
+.foto {
+    width: 150px;
+}
+
+p {
+    color:#5a5959
+}

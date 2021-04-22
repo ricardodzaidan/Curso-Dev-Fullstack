@@ -1,0 +1,36 @@
+/*
+Todo desenvolvedor usa este site para consultas e duvidas sobre o que usar em uma pagina, 
+www.w3schools.com 
+*/
+
+body {
+    background:#ece6e6
+}
+
+h3 {
+    background-color: #f8f4ed;
+    border: 1px solid #5a5959;
+    color:#1db81dfd;
+}
+
+.foto {
+    width: 120px;
+    border: 2px solid #ffff; /* shorthand */
+    border-radius: 45%; /* deixa os cantos arredondados. quanto maior o valor em pixels, mais redondo. para totalmente redondo, colocar 50%*/
+    /*
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    */
+    margin: 20px 30px;
+    /*
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    */
+}
+
+p {
+    color:#5a5959
+}

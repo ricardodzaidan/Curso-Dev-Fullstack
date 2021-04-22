@@ -1,0 +1,113 @@
+/*
+Todo desenvolvedor usa este site para consultas e duvidas sobre o que usar em uma pagina, 
+www.w3schools.com 
+Box model = conjunto margin + border + padding + conteudo
+dev tools: com ele você inspeciona e altera o visual da página e suas configurações no google.
+*/
+
+body {
+    background:#ece6e6;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.conteiner { /*conteiner é o nome comumente usado pelo desenvolvedor para denominar o enquadramento de toda a pagina*/
+    width: 900px;
+    margin: 0px auto;
+}
+
+.apresentacao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.social-icons {
+    width: 40px;
+}
+
+.social {
+    width: 25px
+}
+
+.face {
+    margin: 0px 5px;
+}
+
+.link {
+    text-decoration: none; /* este atributo ,text-decoration, serve apenas para remoção de _ no link*/
+}
+
+h1 {
+    margin: 5px 0px 0px;
+    letter-spacing: normal;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+}
+
+h2 {
+    margin: 0px 0px 30px;
+    font-size: 1.2em;
+    font-style: italic;
+    color: rgb(73, 73, 73);
+    font-weight: 100; /* tira o bold da fonte, sem negrito */
+    letter-spacing: -0.8px;
+}
+
+h3 {
+    background-color: #f8f4ed;
+    border: 1px solid #5a5959;
+    color:#1db81dfd;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.foto-rz {
+    width: 170px;
+    height: 190px;
+    border: 2px solid #ffff; /* shorthand */
+    border-radius: 50%; /* deixa os cantos arredondados. quanto maior o valor em pixels, mais redondo. para totalmente redondo, colocar 50%*/
+    /*
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    */
+    margin: 20px 30px 10px; /* margin define um espaçamento externo à imagem ou texto, entre as extremidades da pagina e a posição do item */
+    /*
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    */
+    padding: 0px; /* padding define um espaçamento interno, ou seja, entre a imagem-texto e a borda */
+    box-shadow: 3px 3px 14px #757373; /*primeiro parametro é a distancia da sombra na horizontal, o segundo é a distancia na vertical, o terceiro é o desfoque da sombra, e o quarto é a cor */   
+    
+}
+
+p {
+    color:rgb(34, 34, 34);
+    margin-top: 0;
+}
+
+.jobs-list {
+    list-style: none;
+    padding-left: 30px;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+h5 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.footer {
+    background-color: blue;
+    text-align: center;
+    color:white;
+    margin-top: 50px;
+    padding: 5px 0;
+}
