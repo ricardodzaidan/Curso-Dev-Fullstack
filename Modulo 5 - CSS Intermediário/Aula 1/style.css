@@ -1,0 +1,43 @@
+div p { /*também é possível estilizar diretamente as tags, sem a necessidade de criar classes para cada. Se você criar uma classe para estas tags, teria que descrever .nome da classe p (exemplo abaixo)*/
+    color:blue;
+}
+
+.exemplo {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.exemplo1 p { 
+    color:red;
+}
+
+.exemplo1 .red { /*você pode também criar a mesma regra para 2 tags distintas ao mesmo tempo, bastando separar as tags por espaço e "."(ponto)*/ /*estes comandos chamam-se Combinators ou Combinadores. Está sendo combimada a mesma regra para 2 classes*/
+    color:blue;
+}
+
+.exemplo1 p.red { /*neste caso, mesmo havendo mais de uma tag com a mesma classe (red), somente o paragrafo teria a regra especificada abaixo.*/ 
+    color:red;
+}
+
+h1, h2, h3 { /*você pode estilizar e colocar a mesma regra para todos, sem a necessidade de colocar classe ou repetir a regra para cada. basta separa-las por , (virgula). ou seja, a virgula serve para aplicar a mesma regra a mais de 1 tag ou classe ou seletor*/ 
+    color:green; 
+}
+
+.exemplo2 p { /*todos os paragrafos existentes dentro desta classe terão este comando, inclusive para a tag "section" */
+    color:grey;
+}
+/*para não incluir a tag "section" no mesmo comando, usa-se o simbolo seletor ">" (maior) para que o comando somente recaia sobre as tags FILHAS da classe, conforme abaixo.*/
+
+.exemplo2 > p { /*com este simbolo seletor > entre a classe e a tag P, os paragrafos dentro da tag Section não terão este comando, pois estes paragrafos são Filhos da tag Section, não da classe .exemplo2 (são netos desta classe)*/
+    color:grey;
+}
+
+.exemplo3 + p { /* este simbulo seletor combinator "+" serve para adicionar comando ao 1º irmão da classe .exemplo3, ou seja, ele busca o irmão seguinte daquela classe.*/  
+    color: red;
+}
+
+.exemplo4 ~ p { /* este simbulo seletor combinator "~" serve para adicionar comando a todos os irmãos da classe .exemplo4, não apenas o 1º como no sinal de "+" */ 
+    color: yellow;
+}
+

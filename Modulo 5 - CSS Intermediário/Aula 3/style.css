@@ -1,0 +1,11 @@
+
+ul {
+    background: grey;
+    text-align:center;
+    padding:10px;
+}
+
+ul li {
+    display:inline-block; /*dispõe o conteúdo em estilo bloco e alinhado lado a lado*/
+    margin:10px;
+}

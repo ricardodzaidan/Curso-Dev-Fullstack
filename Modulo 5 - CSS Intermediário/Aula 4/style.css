@@ -1,0 +1,28 @@
+
+ul {
+    background: grey;
+    text-align:center;
+    /* Comando DISPLAY:NONE; = deixa o elemento invisível na página, mas não o exclui. Neste caso, qualquer outro elemento abaixo ocupará o seu lugar na página. */
+    /*Comando VISIBILITY:HIDDEN = deixa o elemento invisivel, mas o espaço ocupado por ele na pagina permanece. Com isso, outro elemento não ocupa o seu lugar na pagina.*/
+    /*Comando OPACITY: (graduação de 0 a 1); = deixa o elemento mais transparente, onde "0" é totalmente transparente e "1" é totalmente visivel*/
+    opacity: 0.6;
+}
+
+ul li {
+    display:inline-block; /*dispõe o conteúdo em estilo bloco e alinhado lado a lado*/
+    margin:10px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background: greenyellow;
+    text-align: justify;
+    text-indent: 20px;
+    overflow:auto; /*Overflow é quando o texto ou elemento estoura ou vaza para fora da caixa, ou seja, não cabe dentro da delimitação da caixa. Para isso, usamos os comandos: VISIBLE = fica tudo visivel. HIDDEN = fica visivel apenas o que aparece dentro da caixa. SCROLL = coloca barras de rolagem nos eixos horizontal (x) e vertical (y) para leitura de todo o texto. AUTO = ele auto determina o que e qual barra de rolagem vai aparecer*/
+
+}
+
+div p {
+    margin: 5px;
+}
