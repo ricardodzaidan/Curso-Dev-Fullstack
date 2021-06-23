@@ -1,0 +1,62 @@
+
+    /* Comando DISPLAY:NONE; = deixa o elemento invisível na página, mas não o exclui. Neste caso, qualquer outro elemento abaixo ocupará o seu lugar na página. */
+    /*Comando VISIBILITY:HIDDEN = deixa o elemento invisivel, mas o espaço ocupado por ele na pagina permanece. Com isso, outro elemento não ocupa o seu lugar na pagina.*/
+    /*Comando OPACITY: (graduação de 0 a 1); = deixa o elemento mais transparente, onde "0" é totalmente transparente e "1" é totalmente visivel. Exemplo: opacity: 0.6 */
+    /*display:inline-block; dispõe o conteúdo em estilo bloco e alinhado lado a lado*/
+    /*Overflow é quando o texto ou elemento estoura ou vaza para fora da caixa, ou seja, não cabe dentro da delimitação da caixa. Para isso, usamos os comandos: VISIBLE = fica tudo visivel. HIDDEN = fica visivel apenas o que aparece dentro da caixa. SCROLL = coloca barras de rolagem nos eixos horizontal (x) e vertical (y) para leitura de todo o texto. AUTO = ele auto determina o que e qual barra de rolagem vai aparecer*/
+    
+    /* a:hover :  HOVER é a pseudo classe para quando o usuario passar o mouse ou clicar sobre o elemento*/
+    /* a:visited : comando VISITED, que funciona apenas para a ancora link. Quando visitado o link, o comando é acionado*/
+    /* a:hover + .caixa : combinador para dar comando à classe irmã. Usa-se o sinal de + */
+    /* ul li:first-child : comando para o primeiro filho / parágrafo / elemento*/
+    /* ul li:last-child : comando para o último filho / parágrafo / elemento*/
+    /* .exemplo2 p:nth-child(3) : comando para um filho / elemento / paragrafo especifico. Exemplo deste caso 3º paragrafo*/
+
+    /*text-indent : comando para espaçar o início do paragrafo, como nos emails*/
+    /* p:: =  Os pseudo elementos 2 :: vão auxiliar a alterar uma parte específica do conteúdo ou elemento*/ 
+    /*p::first-line = comando first line altera apenas a 1ª linha do texto*/
+    /*p::first-letter = comando first letter altera apenas a 1ª letra do parágrafo*/
+    /*h1::before = comando before = antes do elemento*/
+    /*background-size:cover; = COVER vai mostrar toda a área da imagem*/
+    /*h1::after = comando after = depois do elemento*/
+    /*::selection = comando para alterar o layout quando se seleciona o texto com o mouse. É aplicado somente em todo o documento, não em apenas uma parte específica.*/
+    
+
+    * {
+        margin:0;
+        padding:0;
+    }
+
+    h1 {
+        left:60%;
+        position:fixed;
+        top:0;
+    }
+
+    .retangulo {
+        position: fixed; /*o comando Position FIXED mantem um elemento fixo na tela acompanhando o scrow / barra de rolagem. O Position funciona com qualquer elemento, desde imagem até texto ou caixa ou titulo*/
+        top:35px; /*comando para determinar espaçamento do elemento em relação ao topo da pagina. Para determinar o espaçamento em relação a base da pagina, o comando deve ser Bottom: */
+        left:60%;
+        width: 30%;
+        height: 30px;
+        background: black;
+        color:white;
+        font-size:15px;
+    }
+
+    .circulo {
+        position: absolute; /*o comando Position ABSOLUTE mantem um elemento fixo na tela independente do scrow / barra de rolagem, ou seja, não se move. Este Position será sempre relativo ao body e não ao conjunto ou elemento onde ele se encontra (pai)*/
+        border-radius:50px;
+        top:200px;
+        left:40%;
+        width: 70px;
+        height: 70px;
+        background: black;
+        color:white;
+        font-size:15px;
+    }
+
+    p {
+        margin:50px;
+        width:300px;
+    }

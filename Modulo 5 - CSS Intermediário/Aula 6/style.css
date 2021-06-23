@@ -1,0 +1,54 @@
+
+    /* Comando DISPLAY:NONE; = deixa o elemento invisível na página, mas não o exclui. Neste caso, qualquer outro elemento abaixo ocupará o seu lugar na página. */
+    /*Comando VISIBILITY:HIDDEN = deixa o elemento invisivel, mas o espaço ocupado por ele na pagina permanece. Com isso, outro elemento não ocupa o seu lugar na pagina.*/
+    /*Comando OPACITY: (graduação de 0 a 1); = deixa o elemento mais transparente, onde "0" é totalmente transparente e "1" é totalmente visivel. Exemplo: opacity: 0.6 */
+    /*display:inline-block; dispõe o conteúdo em estilo bloco e alinhado lado a lado*/
+    /*Overflow é quando o texto ou elemento estoura ou vaza para fora da caixa, ou seja, não cabe dentro da delimitação da caixa. Para isso, usamos os comandos: VISIBLE = fica tudo visivel. HIDDEN = fica visivel apenas o que aparece dentro da caixa. SCROLL = coloca barras de rolagem nos eixos horizontal (x) e vertical (y) para leitura de todo o texto. AUTO = ele auto determina o que e qual barra de rolagem vai aparecer*/
+    
+    /* a:hover :  HOVER é a pseudo classe para quando o usuario passar o mouse ou clicar sobre o elemento*/
+    /* a:visited : comando VISITED, que funciona apenas para a ancora link. Quando visitado o link, o comando é acionado*/
+    /* a:hover + .caixa : combinador para dar comando à classe irmã. Usa-se o sinal de + */
+    /* ul li:first-child : comando para o primeiro filho / parágrafo / elemento*/
+    /* ul li:last-child : comando para o último filho / parágrafo / elemento*/
+    /* .exemplo2 p:nth-child(3) : comando para um filho / elemento / paragrafo especifico. Exemplo deste caso 3º paragrafo*/
+
+p {
+    text-indent:30px; /*comando para espaçar o início do paragrafo, como nos emails*/
+}    
+
+/* p:: =  Os pseudo elementos 2 :: vão auxiliar a alterar uma parte específica do conteúdo ou elemento*/ 
+
+p::first-line { /*o comando first line altera apenas a 1ª linha do texto*/
+    color:green;
+    font-weight: bold;
+}
+
+p::first-letter { /*comando first letter altera apenas a 1ª letra do parágrafo*/
+    color:red;
+    font-size: 40px;
+}
+
+h1::before { /*comando before = antes do elemento*/
+background: url(http://simpleicon.com/wp-content/uploads/rocket.png);
+display:inline-block;
+width:25px;
+height:25px;
+margin-right:10px;
+content:"";
+background-size:cover; /*COVER vai mostrar toda a área da imagem*/
+}
+
+h1::after { /*comando after = depois do elemento*/
+    background: url(http://simpleicon.com/wp-content/uploads/rocket.png);
+    display:inline-block;
+    width:25px;
+    height:25px;
+    margin-left:10px;
+    content:"";
+    background-size:cover; /*COVER vai mostrar toda a área da imagem*/
+}
+
+::selection { /*comando para alterar o layout quando se seleciona o texto com o mouse. É aplicado somente em todo o documento, não em apenas uma parte específica.*/
+    color:blue;
+    background:rgb(163, 162, 162);
+}
